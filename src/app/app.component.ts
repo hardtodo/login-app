@@ -30,12 +30,12 @@ export class AppComponent {
     this.username=this.myForm.controls['username'];
     this.password=this.myForm.controls['password'];
     this.name$=this.username.valueChanges;
-    this.username.valueChanges.subscribe(val=>{
-      console.log(val);
-    });
-    this.password.valueChanges.subscribe(val=>{
-      console.log(val);
-    });
+    // this.username.valueChanges.subscribe(val=>{
+    //   console.log(val);
+    // });
+    // this.password.valueChanges.subscribe(val=>{
+    //   console.log(val);
+    // });
   }
   onSubmit(value:any){
     console.log(value);
